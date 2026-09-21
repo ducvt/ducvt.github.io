@@ -1,0 +1,540 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "open_sansregular", sans-serif;
+}
+
+/* Banner */
+#banner {
+    height: 420px;
+
+    background-image: url("../images/banner.jpg");
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+}
+
+/* Position text over the banner image */
+.banner-text {
+    position: absolute;
+
+    top: 45%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+    color: white;
+}
+
+.banner-text h1 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: normal;
+}
+
+.banner-text span {
+    font-size: 12px;
+}
+
+/* Navbar */
+#nav-bar {
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+/* Navigation item */
+.nav-item {
+    width: 170px;
+    height: 70px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-left: 1px solid #ddd;
+
+    text-decoration: none;
+    color: #333;
+
+    font-size: 14px;
+}
+
+.nav-item:last-child {
+    border-right: 1px solid #ddd;
+}
+
+/* Navigation icons */
+.nav-item i {
+    color: #199cdb;
+    margin-right: 5px;
+}
+
+/* Personal avatar in navbar */
+.nav-avatar {
+    width: 300px;
+    height: 70px;
+
+    position: relative;
+
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+/* Personal avatar image */
+.nav-avatar img {
+    width: 150px;
+    height: 150px;
+
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    border: 8px solid white;
+    border-radius: 50%;
+
+    object-fit: cover;
+}
+
+/* Personal information section */
+#about {
+    background-color: #f7f7f7;
+}
+
+/* Create two equal columns but in this assigment3 let bootstrap 5 handle */
+/* .about-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+} */
+
+/* Left column */
+.career-goal {
+    padding: 70px 60px;
+}
+
+/* Right column */
+.personal-info {
+    padding: 70px 60px;
+    background-color: #f0f0f0;
+}
+
+/* Section titles */
+.career-goal h2,
+.personal-info h2 {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-weight: normal;
+}
+
+/* Text */
+.career-goal p,
+.personal-info p {
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Social icons */
+.social-icons {
+    margin-top: 25px;
+}
+
+.social-icons i {
+    color: #199cdb;
+    margin-right: 12px;
+}
+
+/* Job information section */
+#job-info {
+    padding: 60px 0;
+}
+
+/* Create a 3-column and 2-row grid */
+.job-info-grid {
+    width: 1000px;
+    margin: 0 auto;
+
+    /* disable ex-grid by using bootstrap grid */
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px; */
+}
+
+/* Common card style */
+.job-card {
+    border: 1px solid #ddd;
+    padding: 25px;
+}
+
+/* Card header: 75% title and 25% icon */
+.job-card-header {
+    display: grid;
+    grid-template-columns: 75% 25%;
+
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.job-card-header h2 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.job-card-header i {
+    font-size: 36px;
+    color: #aaa;
+    text-align: center;
+}
+
+/* Job information content */
+.job-item {
+    margin-bottom: 30px;
+}
+
+.job-item:last-child {
+    margin-bottom: 0;
+}
+
+.job-item h3 {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.job-item p {
+    margin: 5px 0;
+    line-height: 1.6;
+    font-size: 13px;
+    color: #555;
+}
+
+.job-time {
+    font-style: italic;
+    color: #777;
+}
+
+/* Current job badge */
+.current {
+    background-color: #199cdb;
+    color: white;
+
+    padding: 3px 10px;
+    border-radius: 6px;
+}
+
+/* Hobby */
+.hobby-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hobby-item {
+    text-align: center;
+    font-size: 12px;
+}
+
+.hobby-icon {
+    width: 45px;
+    height: 45px;
+
+    border: 1px solid #199cdb;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 auto 10px;
+}
+
+.hobby-icon i {
+    color: #199cdb;
+    font-size: 20px;
+}
+
+/* Language and skill levels */
+.level-item {
+    margin-bottom: 25px;
+}
+
+.level-item p {
+    margin-bottom: 10px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* Three-level scale */
+.level-bar span {
+    display: inline-block;
+
+    width: 45px;
+    height: 2px;
+
+    margin-right: 10px;
+
+    background-color: #ddd;
+}
+
+/* Active level */
+.level-bar span.active {
+    background-color: #199cdb;
+}
+
+/* Certificate section */
+#certificate {
+    background-color: #f7f7f7;
+    padding: 60px 0;
+}
+
+/* Main certificate container */
+.certificate-container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.certificate-container h2 {
+    margin-top: 0;
+    margin-bottom: 40px;
+
+    font-size: 28px;
+    font-weight: normal;
+}
+
+/* Create two equal columns */
+/* .certificate-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+} */
+
+/* Certificate item */
+.certificate-item {
+    display: grid;
+    grid-template-columns: 40% 60%;
+
+    padding: 30px 20px;
+}
+
+/* Certificate image */
+.certificate-item img {
+    width: 100%;
+}
+
+/* Certificate information */
+.certificate-content {
+    padding-left: 25px;
+}
+
+.certificate-content h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.certificate-content p {
+    margin: 8px 0;
+
+    font-size: 13px;
+    color: #555;
+}
+
+/* Certificate borders */
+.certificate-border-right {
+    border-right: 1px solid #d6c08d;
+}
+
+.certificate-border-bottom {
+    border-bottom: 1px solid #d6c08d;
+}
+
+/* Project section */
+#project {
+    padding: 60px 0;
+}
+
+/* Main project container */
+.project-container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.project-container h2 {
+    margin-top: 0;
+    margin-bottom: 40px;
+
+    font-size: 28px;
+    font-weight: normal;
+}
+/* remove */
+/* Create three equal project columns */
+/* .project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+} */
+
+/* Project card */
+.project-card {
+    border: 1px solid #ddd;
+}
+
+/* Project image */
+.project-card img {
+    width: 100%;
+    display: block;
+}
+
+/* Project title */
+.project-title {
+    padding: 18px 15px;
+
+    border-bottom: 1px solid #ddd;
+
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+/* Project metadata */
+.project-meta {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    padding: 12px 15px;
+
+    border-bottom: 1px solid #ddd;
+
+    font-size: 12px;
+    color: #666;
+}
+
+/* Project year */
+.project-year {
+    padding: 5px 12px;
+
+    background-color: #199cdb;
+    color: white;
+
+    border-radius: 15px;
+}
+
+/* Project metadata icons */
+.project-meta i {
+    margin-right: 5px;
+}
+
+/* Project detail table */
+.project-table {
+    width: 100%;
+    border-collapse: collapse;
+
+    font-size: 12px;
+    color: #555;
+}
+
+.project-table td {
+    padding: 12px 8px;
+
+    vertical-align: top;
+
+    border-bottom: 1px solid #ddd;
+}
+
+/* First column of project table */
+.project-table td:first-child {
+    width: 30%;
+}
+
+/* Remove the last bottom border */
+.project-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* Footer */
+#footer {
+    background-color: #f7f7f7;
+    padding: 35px 0;
+    text-align: center;
+}
+
+/* Footer items */
+.footer-item {
+    display: inline-block;
+
+    margin: 0 20px;
+
+    text-decoration: none;
+    color: #777;
+}
+
+/* Social icons */
+.footer-item i {
+    margin-right: 8px;
+
+    font-size:200%;
+    color: #199cdb;
+
+    vertical-align: middle;
+}
+
+/* Social network text */
+.footer-item span {
+    vertical-align: middle;
+}
+
+/* email validation */
+.hide{
+    display: none;
+}
+
+.email-form input{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 5px;
+}
+
+.email-message{
+    margin-bottom: 10px;
+    font-size: 12px;
+    color:#777;
+}
+
+.email-form button{
+    padding:8px 15px;
+}
+
+.view-more-btn {
+    display: none;
+
+    grid-column: 1 / 3;
+    justify-self: start;
+
+    margin-top: 10px;
+    padding: 6px 15px;
+
+    border: none;
+    border-radius: 15px;
+
+    background-color: #fff6b0;
+
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.job-card:hover .view-more-btn {
+    display: block;
+}

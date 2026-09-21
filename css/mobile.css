@@ -1,0 +1,80 @@
+/* mobile css */
+
+@media(max-width: 767px){
+    .nav-avatar{
+        display: none;
+    }
+
+    .nav-container{
+        display: block;
+    }
+
+    .nav-item{
+        display: block;
+        width: 100%;
+        height: auto;
+
+        padding: 12px 20px;
+
+        border-left: none;
+    }
+
+    .nav-item:last-child{
+        border-right: none;
+    }
+
+     /* Personal information */
+    .career-goal,
+    .personal-info {
+        padding: 50px 20px;
+    }
+
+     /* Job information */
+    .job-info-grid {
+        width: 90%;
+    }
+
+    /* certificate information */
+    .certificate-container {
+        width: 90%;
+    }
+
+    /* mobile only need to display by using 1 col */
+    .certificate-item {
+        grid-template-columns: 1fr;
+    }
+
+    .certificate-content {
+        /* no need padding left like tablet or desktop version*/
+        padding-left: 0;
+        padding-top: 15px;
+    }
+
+    /* no need right-side border because of using only 1 col */
+    .certificate-border-right {
+        border-right: none;
+    }
+
+    .certificate-item {
+        border-bottom: 1px solid #d6c08d;
+    }
+
+    /* project information */
+    .project-container {
+        width: 90%;
+    }
+
+    .project-meta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    /* footer icon */
+    .footer-item {
+        margin: 0 8px;
+    }
+
+    .footer-item i {
+        font-size: 180%;
+    }
+}

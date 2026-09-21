@@ -1,0 +1,36 @@
+/* tablet.css */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    /* do not display avatar */
+    .nav-avatar {
+        display: none;
+    }
+
+    /* reduce padding for better mobile display */
+    .career-goal,
+    .personal-info {
+        padding: 50px 30px;
+    }
+
+    /* Job information */
+    .job-info-grid {
+        width: 90%;
+    }
+
+    /* certificate */
+    .certificate-container {
+        width: 90%;
+    }
+
+    /* project information */
+    .project-container {
+        width: 90%;
+    }
+
+    /* footer icon */
+    .footer-item {
+        margin: 0 15px;
+    }
+
+}
